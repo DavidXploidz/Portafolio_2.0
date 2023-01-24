@@ -1,0 +1,113 @@
+.nav__ul{
+    display: none;
+}
+@media (min-width: 768px){ 
+    .nav__ul{
+        padding: 0;
+        display: flex;
+        align-items: center;
+        column-gap: 1.5rem;
+    }
+}
+.nav__li{
+    list-style: none;
+    color: var(--White);
+    text-transform: capitalize;
+    font-size: 18px;
+    transition: all var(--transicion200ms) ease-in-out;
+    position: relative;
+}
+.nav__li--darkmode{
+    color: var(--BlueNight);
+}
+.nav__li:hover{
+    color: var(--Green);
+    cursor: pointer;
+}
+.nav__li:hover::after{
+    content: '';
+    position: absolute;
+    width: 30px;
+    height: 2px;
+    right: calc(50% - 15px);
+    bottom: -5px;
+    background-color: var(--Green);
+    border-top-left-radius: 30px;
+    border-bottom-left-radius: 30px;
+    animation-name: barritaIzquierda;
+    animation-iteration-count: initial;
+    animation-duration: var(--transicion200ms);
+    animation-timing-function: ease-in-out;
+    transform: translateX(-15px);
+}
+@keyframes barritaIzquierda {
+    from{
+        opacity: 0;
+        transform: translateX(-5px);
+    }
+    to{
+        opacity: 1;
+        transform: translateX(-15px);
+    }
+}
+.nav__li:hover::before{
+    content: '';
+    position: absolute;
+    width: 30px;
+    height: 2px;
+    left: calc(50% - 15px);
+    bottom: -5px;
+    background-color: var(--Green);
+    border-top-right-radius: 30px;
+    border-bottom-right-radius: 30px;
+    animation-name: barritaDerecha;
+    animation-iteration-count: initial;
+    animation-duration: var(--transicion200ms);
+    transform: translateX(15px);
+}
+@keyframes barritaDerecha {
+    from{
+        opacity: 0;
+        transform: translateX(-5px);
+    }
+    to{
+        opacity: 1;
+        transform: translateX(15px);
+    }
+}
+.nav__li--activo{
+    color: var(--Green);
+}
+.nav__li--toggle{
+    display: none;
+}
+.menu{
+    display: flex;
+    align-items: center;
+    flex-direction: row-reverse;
+    column-gap: 1rem;
+}
+@media (min-width: 768px){ 
+    .menu{
+        display: none;
+    }
+}
+.menu__ham{
+    font-size: 3rem;
+    color: var(--Gray);
+}
+.menu__ham--darkmode{
+    color: var(--BlueNight);
+}
+.nav__li--mobileClose{
+    display: none;
+}
+.nav__li--mobile{
+    display: block;
+}
+.d-none{
+    display: none;
+}
+.d-block{
+    display: block;
+}

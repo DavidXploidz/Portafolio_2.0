@@ -1,0 +1,123 @@
+.landing{
+   height: 100vh;
+   z-index: 1;
+   position: relative;
+}
+.landing__image{
+    z-index: inherit;
+    width: 100%;
+    height: inherit;
+    object-fit: cover;
+    object-position: right;
+    transition: all var(--transicion200ms) ease-in-out;
+    animation-name: flash;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: initial;
+    animation-duration: var(--transicion200ms);
+}
+@media (min-width: 768px){ 
+    .landing__image{
+        object-fit: cover;
+        object-position: center;
+        transition: all var(--transicion200ms) ease-in-out;
+        animation-name: flash;
+        animation-timing-function: ease-in-out;
+        animation-iteration-count: initial;
+        animation-duration: var(--transicion200ms);
+    }
+}
+.landing::after{
+    content: '';
+    position: absolute;
+    inset: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+.landing--darkmode{
+    height: 100vh;
+    z-index: 1;
+    position: relative;
+}
+.landing--darkmode::after{
+    content: '';
+    position: absolute;
+    inset: 0;
+    background-color: rgba(0, 0, 0, 0.2);
+}
+.landing__image--darkmode{
+    display: none;
+}
+@keyframes flash {
+    from{
+        opacity: 0;
+    }
+    to{
+        opacity: 1;
+    }
+}
+.landing__content{
+
+    position: absolute;
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 1rem;
+    border-radius: 5px;
+    width: 350px;
+    left: calc(50% - 175px);
+    top: 25%;
+    z-index: 2;
+    transition: all var(--transicion200ms) ease-in-out;
+}
+@media (min-width: 768px){ 
+    .landing__content{
+        margin-left: var(--Contenedor);
+        position: absolute;
+        background-color: rgba(0, 0, 0, 0.5);
+        padding: 1rem;
+        border-radius: 5px;
+        left: 0;
+        top: 40%;
+        z-index: 2;
+        transition: all var(--transicion200ms) ease-in-out;
+    }
+}
+.landing__nombre{
+    font-size: 32px;
+    color: var(--White);
+    margin-bottom: 1rem;
+    transition: all var(--transicion200ms) ease-in-out;
+    /* animation: name duration timing-function delay iteration-count direction fill-mode; */
+    animation-name: barrido-nombre;
+    animation-timing-function: ease-in-out;
+    animation-duration: var(--transicion1000ms);
+    animation-iteration-count: initial;
+}
+@keyframes barrido-nombre {
+    from{
+        transform: translateY(-70px);
+        opacity: 0;
+    }
+    to{
+        transform: translateY(0px);
+        opacity: 1;
+    }
+}
+.landing__puesto{
+    color: var(--White);
+    transition: all var(--transicion200ms) ease-in-out;
+    font-size: 24px;
+    margin-bottom: 1rem;
+    animation-name: barrido-puesto;
+    animation-timing-function: ease-in-out;
+    animation-duration: var(--transicion1200ms);
+    animation-iteration-count: initial;
+}
+@keyframes barrido-puesto {
+    from{
+        transform: translateY(-70px);
+        opacity: 0;
+    }
+    to{
+        transform: translateY(0px);
+        opacity: 1;
+    }
+}
+
