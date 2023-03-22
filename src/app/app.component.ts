@@ -85,6 +85,19 @@ export class AppComponent {
           js: true,
         }
       ]
+    },
+    {
+      id: 6 ,
+      nombre: 'EasyBank Landing Page',
+      imagen: 'https://res.cloudinary.com/dypooembo/image/upload/v1679499440/easybankiMAGE_vem0in.png',
+      enlace: 'https://davidxploidz.github.io/EasyBankLandingPageAngular/',
+      tecnologias: [
+        {
+          html: true,
+          css: true,
+          angular: true,
+        }
+      ]
     }
 
   ]
