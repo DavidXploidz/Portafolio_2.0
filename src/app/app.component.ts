@@ -23,9 +23,9 @@ export class AppComponent {
   public proyectos: any = [
     {
       id: 1,
-      nombre: 'Photo stock (pixabay api)',
-      imagen: 'https://res.cloudinary.com/dypooembo/image/upload/v1657386403/photo-stock_jailke.png',
-      enlace: 'https://davidxploidz.github.io/Photo-stock/',
+      nombre: 'Multi Step Form',
+      imagen: 'https://res.cloudinary.com/dypooembo/image/upload/v1685033404/MultiStepForm_qwgzdg.png',
+      enlace: 'https://davidxploidz.github.io/Multi-step-form/',
       tecnologias: [
         {
           react: true,
@@ -36,12 +36,12 @@ export class AppComponent {
     },
     {
       id: 2,
-      nombre: 'Blog de Café',
-      imagen: 'https://res.cloudinary.com/dypooembo/image/upload/v1656094840/cafe_setsml.png',
-      enlace: 'https://blogcaferesponsivez.netlify.app/',
+      nombre: 'Jobs Filtering',
+      imagen: 'https://res.cloudinary.com/dypooembo/image/upload/v1685032990/FilteringPage_z7gxag.png',
+      enlace: 'https://davidxploidz.github.io/Job-listings-with-filtering/',
       tecnologias: [
         {
-          js: true,
+          react: true,
           html: true,
           css: true,
         }
