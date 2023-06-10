@@ -23,6 +23,19 @@ export class AppComponent {
   public proyectos: any = [
     {
       id: 1,
+      nombre: 'Space Tourism "Real Figma Design" ',
+      imagen: 'https://res.cloudinary.com/dypooembo/image/upload/v1686376683/SpaceTourism_zn5jik.png',
+      enlace: 'https://davidxploidz.github.io/Space-Tourism-Landing/',
+      tecnologias: [
+        {
+          react: true,
+          html: true,
+          css: true,
+        }
+      ]
+    },
+    {
+      id: 2,
       nombre: 'Multi Step Form',
       imagen: 'https://res.cloudinary.com/dypooembo/image/upload/v1685033404/MultiStepForm_qwgzdg.png',
       enlace: 'https://davidxploidz.github.io/Multi-step-form/',
@@ -35,7 +48,7 @@ export class AppComponent {
       ]
     },
     {
-      id: 2,
+      id: 3,
       nombre: 'Jobs Filtering',
       imagen: 'https://res.cloudinary.com/dypooembo/image/upload/v1685032990/FilteringPage_z7gxag.png',
       enlace: 'https://davidxploidz.github.io/Job-listings-with-filtering/',
@@ -48,7 +61,7 @@ export class AppComponent {
       ]
     },
     {
-      id: 3,
+      id: 4,
       nombre: 'TODO App DarkMode',
       imagen: 'https://res.cloudinary.com/dypooembo/image/upload/v1657156358/app-todo_brglg7.png',
       enlace: 'https://davidxploidz.github.io/Todo__app__angular/',
@@ -61,7 +74,7 @@ export class AppComponent {
       ]
     },
     {
-      id: 4,
+      id: 5,
       nombre: 'bookmark landing page',
       imagen: 'https://res.cloudinary.com/dypooembo/image/upload/v1674156119/landingprueba_jxcsh4.png',
       enlace: 'https://davidxploidz.github.io/Bookmarking_landing_angular/',
@@ -74,7 +87,7 @@ export class AppComponent {
       ]
     },
     {
-      id: 5,
+      id: 6,
       nombre: 'news home page',
       imagen: 'https://res.cloudinary.com/dypooembo/image/upload/v1674156381/news_home_page_kxgjwh.png',
       enlace: 'https://davidxploidz.github.io/News-homepage/',
@@ -87,7 +100,7 @@ export class AppComponent {
       ]
     },
     {
-      id: 6 ,
+      id: 7 ,
       nombre: 'EasyBank Landing Page',
       imagen: 'https://res.cloudinary.com/dypooembo/image/upload/v1679499440/easybankiMAGE_vem0in.png',
       enlace: 'https://davidxploidz.github.io/EasyBankLandingPageAngular/',
